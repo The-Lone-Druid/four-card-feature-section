@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="d-flex align-items-center justify-content-center flex-column py-5"
+      >
+        <div class="col-md-5 mx-auto text-center">
+          <h1 class="fw-light text-fcfe-extra-dark-blue">
+            Reliable, efficient delivery
+          </h1>
+          <h1 class="fw-bold text-fcfe-extra-dark-blue">
+            Powered by Technology
+          </h1>
+          <p class="mt-4">
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+        </div>
+        <div class="mt-4">
+          <div class="row align-items-center p-1">
+            <div class="col-lg-4 mb-4">
+              <div
+                class="bg-white shadow p-4 rounded overflow-hidden border-top border-fcfe-cyan border-4"
+              >
+                <h4 class="fw-bold text-fcfe-extra-dark-blue">Supervisor</h4>
+                <p class="mt-4 text-fcfe-grayish-blue">
+                  Monitors activity to identify project roadblocks
+                </p>
+                <div class="d-flex justify-content-end">
+                  <img src="./images/icon-supervisor.svg" class="mt-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="col-md-12 mb-4">
+                <div
+                  class="bg-white shadow p-4 rounded overflow-hidden border-top border-fcfe-red border-4"
+                >
+                  <h4 class="fw-bold text-fcfe-extra-dark-blue">
+                    Team Builder
+                  </h4>
+                  <p class="mt-4 text-fcfe-grayish-blue">
+                    Scans our talent network to create the optimal team for your
+                    project
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <img
+                      src="./images/icon-team-builder.svg"
+                      class="mt-5"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div
+                  class="bg-white shadow p-4 rounded overflow-hidden border-top border-fcfe-orange border-4"
+                >
+                  <h4 class="fw-bold text-fcfe-extra-dark-blue">Karma</h4>
+                  <p class="mt-4 text-fcfe-grayish-blue">
+                    Regularly evaluates our talent to ensure quality
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <img src="./images/icon-karma.svg" class="mt-5" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div
+                class="bg-white shadow p-4 rounded overflow-hidden border-top border-fcfe-blue border-4"
+              >
+                <h4 class="fw-bold text-fcfe-extra-dark-blue">Calculator</h4>
+                <p class="mt-4 text-fcfe-grayish-blue">
+                  Uses data from past projects to provide better delivery
+                  estimates
+                </p>
+                <div class="d-flex justify-content-end">
+                  <img src="./images/icon-calculator.svg" class="mt-5" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

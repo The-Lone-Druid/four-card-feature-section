@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+$custom-theme: (
+  "fcfe-red": hsl(0, 78%, 62%),
+  "fcfe-cyan": hsl(180, 62%, 55%),
+  "fcfe-orange": hsl(34, 97%, 64%),
+  "fcfe-blue": hsl(212, 86%, 64%),
+  "fcfe-extra-dark-blue": hsl(234, 12%, 34%),
+  "fcfe-grayish-blue": hsl(229, 6%, 66%),
+  "fcfe-extra-light-gray": hsl(0, 0%, 98%)
+);
+
+$custom-breakpoints: (
+  "mobile": 375px,
+  "desktop": 1440px
+);
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, $custom-theme);
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom css
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
